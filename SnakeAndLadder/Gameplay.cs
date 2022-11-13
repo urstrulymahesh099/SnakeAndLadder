@@ -10,7 +10,7 @@ namespace SnakeAndLadder
     {
         Random random = new Random();
         const int NO_PLAY = 0, LADDER = 1, SNAKE = 2, WINNING_POSITION = 100;
-        int playerPosition = 0;
+        int playerPosition = 0, count = 0;
 
         public void Position()
         {
@@ -21,6 +21,7 @@ namespace SnakeAndLadder
             int dice = random.Next(1, 7);
             Console.WriteLine("Output of Dice - " + dice);
             Console.WriteLine("You are at -", _ = this.playerPosition);
+            count++;
             return dice;
         }
         public void Check()
@@ -50,6 +51,8 @@ namespace SnakeAndLadder
                 }
                 Console.WriteLine("You Are At " + this.playerPosition);
             }
+            Console.WriteLine("Count of dice PLAYED " + count);
+            Console.WriteLine("You won the GAME");
         }
     }
 }
