@@ -15,5 +15,11 @@ namespace SnakeAndLadder
             Console.WriteLine("You are at " + playerPosition);
             Console.WriteLine("Lets Roll");
         }
+        public void DiceRoll()
+        {
+            Random random = new Random();
+            int dice = random.Next(1, 7);
+            Console.WriteLine("Result of Dice" + "\n"+dice);
+        }
     }
 }

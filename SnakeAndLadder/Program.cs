@@ -10,6 +10,8 @@ namespace SnakeAndLadder
             Console.WriteLine("Welcome to Snake and Ladder Problem Statement?");
             Gameplay playerPosition = new Gameplay();
             playerPosition.Position();
+            Gameplay dice = new Gameplay();
+            dice.DiceRoll();
 
         }
     }
