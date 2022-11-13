@@ -40,8 +40,12 @@ namespace SnakeAndLadder
                     case SNAKE:
                         this.playerPosition -= DiceRoll();
                         break;
+                        {
+                            this.playerPosition = 0;
+                        }
+                        break;
                 }
-                Console.WriteLine(this.playerPosition);
+                Console.WriteLine("You Are At " + this.playerPosition);
             }
         }
     }
