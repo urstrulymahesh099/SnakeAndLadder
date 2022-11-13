@@ -12,6 +12,8 @@ namespace SnakeAndLadder
             playerPosition.Position();
             Gameplay dice = new Gameplay();
             dice.DiceRoll();
+            Gameplay check = new Gameplay();
+            check.Check();
 
         }
     }
