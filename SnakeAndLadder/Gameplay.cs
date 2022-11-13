@@ -36,6 +36,9 @@ namespace SnakeAndLadder
                         break;
                     case LADDER:
                         this.playerPosition += DiceRoll();
+                        int die = DiceRoll();
+                        if (this.playerPosition + die <=  WINNING_POSITION)
+                            this.playerPosition += die;
                         break;
                     case SNAKE:
                         this.playerPosition -= DiceRoll();
